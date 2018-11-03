@@ -18,9 +18,9 @@ public class CrazyStuffCollider : MonoBehaviour {
 //        glitchyCameraEffect = GetComponent<GlitchEffect>();
 	}
 
-	void OnTriggerEnter()
+	public void OnTriggerEnter(Collider other)
 	{
-        if (canSpawn == true)
+        if (other.tag == "Player" && canSpawn == true)
         {
             canSpawn = false;
 
@@ -31,9 +31,8 @@ public class CrazyStuffCollider : MonoBehaviour {
 
             GameObject.Find("FirstPersonCharacter").GetComponent<PostProcessingBehaviour>().enabled = true;
 
-            Debug.Log("collision");
+            Debug.Log("Player collision");
         }
-        
 	}
 
 	private void OnTriggerExit(Collider other)
