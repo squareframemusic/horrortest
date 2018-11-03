@@ -76,7 +76,7 @@ public class GlitchEffect : ImageEffectBase {
             {
                 material.SetFloat("flip_up", Random.Range(0, 1f) * flipIntensity);
                 //audio start here.
-                UnityEngine.Debug.Log("Audio Start");
+//                UnityEngine.Debug.Log("Audio Start");
 //                WhiteNoise.setPitch(0);
                 WhiteNoise.start();
             }
@@ -84,7 +84,7 @@ public class GlitchEffect : ImageEffectBase {
             {
                 material.SetFloat("flip_up", 0);
                 //audio stop here.
-                UnityEngine.Debug.Log("Audio Stop");
+ //               UnityEngine.Debug.Log("Audio Stop");
                 WhiteNoise.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
 
                 glitchup = 0;
