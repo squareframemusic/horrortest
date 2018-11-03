@@ -33,6 +33,7 @@ public class CrazyStuffCollider : MonoBehaviour {
 
             Debug.Log("collision");
         }
+        
 	}
 
 	private void OnTriggerExit(Collider other)
