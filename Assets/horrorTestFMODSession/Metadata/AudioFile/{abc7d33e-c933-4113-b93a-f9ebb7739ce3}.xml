@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{abc7d33e-c933-4113-b93a-f9ebb7739ce3}">
+        <property name="assetPath">
+            <value>FootstepsOnLino/Footsteps- Lino, blundstones_denoiseRX4_single_05.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>96</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>0.30476041666666664</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{1355540e-1d48-4601-a38e-7d61cb5e8a02}</destination>
+        </relationship>
+    </object>
+</objects>
