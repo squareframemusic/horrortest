@@ -34,6 +34,8 @@ public class EnemyCollision : MonoBehaviour {
     void StartPartTwo()
     {
         //Teleports player.
-        playerObject.transform.position = partTwoStartPoint.transform.position;
+           playerObject.transform.position = partTwoStartPoint.transform.position;
+           
+        
     }
 }
