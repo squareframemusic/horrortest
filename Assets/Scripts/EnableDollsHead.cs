@@ -19,6 +19,10 @@ public class EnableDollsHead : MonoBehaviour {
     {
         //enables the dolls head in front of the camera.
         dollHead.SetActive(true);
+
+        //turns on glitchy camera effect.
+        GameObject.Find("FirstPersonCharacter").GetComponent<GlitchEffect>().enabled = true;
+
         Debug.Log("collided with doll head activator");
     }
 }
