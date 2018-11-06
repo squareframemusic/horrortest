@@ -116,7 +116,7 @@
     </object>
     <object class="EventMixerGroup" id="{a51c06bb-aaac-4f35-8898-d615ca6f718e}">
         <property name="volume">
-            <value>-3.5</value>
+            <value>-5.5</value>
         </property>
         <property name="name">
             <value>Footsteps</value>
@@ -235,10 +235,16 @@
     <object class="MixerBusEffectChain" id="{dd66c3d2-41a8-478b-bdb9-75e3d852aff0}">
         <relationship name="effects">
             <destination>{434af913-8119-4c2f-a3be-5aafd0f2aa10}</destination>
+            <destination>{7131d5a3-e4c3-4ee7-a420-6f8eeb59f2b6}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{d013bcda-3e40-4364-b0f6-13af193ab72f}"/>
     <object class="MixerBusFader" id="{c06cd9ed-b473-4da0-a21c-07c2cc8c16ad}"/>
     <object class="SpatialiserEffect" id="{436a6b5d-1e07-439b-b747-8cd19ee21e55}"/>
     <object class="MixerBusFader" id="{434af913-8119-4c2f-a3be-5aafd0f2aa10}"/>
+    <object class="ThreeEQEffect" id="{7131d5a3-e4c3-4ee7-a420-6f8eeb59f2b6}">
+        <property name="lowGain">
+            <value>-16.5</value>
+        </property>
+    </object>
 </objects>
