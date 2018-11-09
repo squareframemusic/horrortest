@@ -96,7 +96,7 @@
             <value>22</value>
         </property>
         <property name="pitch">
-            <value>3.60000014</value>
+            <value>1.60000002</value>
         </property>
         <property name="polyphony">
             <value>3</value>
@@ -149,9 +149,9 @@
     <object class="MixerBusEffectChain" id="{c62581e2-c05e-4661-bd0f-efaf687a3d64}">
         <relationship name="effects">
             <destination>{8d687352-1403-4064-80dd-cf079e13e706}</destination>
-            <destination>{45115a66-de34-4458-99ef-34c531844962}</destination>
             <destination>{d1a29281-e7e3-4195-a813-b790777ddcd0}</destination>
             <destination>{6733717b-a5e9-4f68-be85-fb9d4c03fb8d}</destination>
+            <destination>{45115a66-de34-4458-99ef-34c531844962}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{2c54a0b4-412b-468e-ad0b-c43408144d85}"/>
@@ -161,7 +161,7 @@
             <value>pitch</value>
         </property>
         <property name="amount">
-            <value>26.5</value>
+            <value>19.5</value>
         </property>
     </object>
     <object class="RandomizerModulator" id="{1210a7f4-2043-4ec5-8284-ea725643ca55}">
@@ -214,12 +214,24 @@
             <value>24</value>
         </property>
     </object>
+    <object class="MixerBusFader" id="{d1a29281-e7e3-4195-a813-b790777ddcd0}"/>
+    <object class="SpatialiserEffect" id="{6733717b-a5e9-4f68-be85-fb9d4c03fb8d}">
+        <property name="extentMode">
+            <value>1</value>
+        </property>
+        <property name="soundSize">
+            <value>0.099999994</value>
+        </property>
+    </object>
     <object class="SFXReverbEffect" id="{45115a66-de34-4458-99ef-34c531844962}">
         <property name="decayTime">
             <value>4800</value>
         </property>
         <property name="earlyDelay">
             <value>15.5</value>
+        </property>
+        <property name="lowShelfFrequency">
+            <value>450</value>
         </property>
         <property name="highCut">
             <value>2800</value>
@@ -231,8 +243,6 @@
             <value>-0.5</value>
         </property>
     </object>
-    <object class="MixerBusFader" id="{d1a29281-e7e3-4195-a813-b790777ddcd0}"/>
-    <object class="SpatialiserEffect" id="{6733717b-a5e9-4f68-be85-fb9d4c03fb8d}"/>
     <object class="SingleSound" id="{7cc4c409-2ac8-479b-ab31-5095e7c9fddb}">
         <relationship name="audioFile">
             <destination>{fbba55b0-06c0-46fe-83c1-b6f43b88c79c}</destination>
