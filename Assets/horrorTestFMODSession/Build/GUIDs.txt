@@ -1,5 +1,6 @@
 {d741849b-d0d1-4967-9506-9ea554b43a42} event:/MC/Drone
 {79a01e11-bae8-4206-8ed8-8d9b840fe3d4} event:/MC/Tension
+{5abff2a5-436c-40fb-af53-19eedeb30f45} event:/MC/Jump_Scares
 {d661323c-cb1f-4c60-a920-b59f8886e482} event:/SFX/ElectricalBox
 {77edc869-8206-4f81-935e-554518f409dc} event:/SFX/Footsteps
 {89e0fa40-37fe-47a6-88f0-df6a9c805144} event:/SFX/Glitch01
