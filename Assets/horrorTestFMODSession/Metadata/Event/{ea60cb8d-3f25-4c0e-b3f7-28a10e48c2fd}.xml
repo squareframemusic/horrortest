@@ -125,6 +125,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{160908ae-df44-41ba-8c59-1956e918bda3}">
+        <property name="volume">
+            <value>10</value>
+        </property>
         <property name="name">
             <value>Audio 1</value>
         </property>
@@ -209,7 +212,7 @@
     <object class="MixerBusPanner" id="{ad4ccbd2-3f1b-4c34-982c-6b9f39786fbe}"/>
     <object class="GainEffect" id="{38a8ece6-c137-402c-8486-9625bca56a38}">
         <property name="gain">
-            <value>6.5</value>
+            <value>10</value>
         </property>
     </object>
     <object class="MixerBusFader" id="{d1a29281-e7e3-4195-a813-b790777ddcd0}"/>
