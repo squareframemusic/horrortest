@@ -10,6 +10,7 @@ public class CrazyStuffCollider : MonoBehaviour {
 
     public GameObject monsterPreb;
     public Vector3 monsterSpawnPoint01 = new Vector3(-11.777f, 0.789f, 0.07f);
+    public GameObject monSpawnPoint;
     public bool canSpawn = true;
 
 
@@ -27,7 +28,7 @@ public class CrazyStuffCollider : MonoBehaviour {
             GameObject.Find("FirstPersonCharacter").GetComponent<GlitchEffect>().enabled = true;
             //        glitchyCameraEffect.enabled = !glitchyCameraEffect.enabled;
 
-            MonsterSpawn(monsterSpawnPoint01, 180);
+            MonsterSpawn(monSpawnPoint.transform.position, 180);
 
             GameObject.Find("FirstPersonCharacter").GetComponent<PostProcessingBehaviour>().enabled = true;
 

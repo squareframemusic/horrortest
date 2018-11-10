@@ -5,7 +5,7 @@
             <value>WhisperScatter2</value>
         </property>
         <property name="outputFormat">
-            <value>2</value>
+            <value>5</value>
         </property>
         <relationship name="folder">
             <destination>{afece51b-25a4-4861-8e59-0018d9a60bb5}</destination>
@@ -119,6 +119,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{2f0a85a8-d38f-4e93-8ced-3d77bbe4dbcc}">
+        <property name="volume">
+            <value>10</value>
+        </property>
         <property name="name">
             <value>Audio 1</value>
         </property>
@@ -148,10 +151,7 @@
     </object>
     <object class="MixerBusEffectChain" id="{dc402988-7550-4d1f-963a-b4461ed10456}">
         <relationship name="effects">
-            <destination>{b89c84a8-9b96-48f5-b374-5ad22b094068}</destination>
             <destination>{21d6de73-f08d-4d00-b1d0-6c51bf01a53f}</destination>
-            <destination>{c641ffa4-67ce-4814-8f5c-bf99fe85420d}</destination>
-            <destination>{186e044d-5a23-4339-826c-1cbe6e50be78}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{afc3ab6c-ccff-4b31-a7e2-cf08dd979060}"/>
@@ -203,36 +203,7 @@
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{e3c3cc9d-93f3-472c-9e40-d6ed089f0cc5}"/>
-    <object class="CompressorEffect" id="{b89c84a8-9b96-48f5-b374-5ad22b094068}">
-        <property name="threshold">
-            <value>-9.5</value>
-        </property>
-        <property name="ratio">
-            <value>4.29999971</value>
-        </property>
-        <property name="gain">
-            <value>24</value>
-        </property>
-    </object>
     <object class="MixerBusFader" id="{21d6de73-f08d-4d00-b1d0-6c51bf01a53f}"/>
-    <object class="SpatialiserEffect" id="{c641ffa4-67ce-4814-8f5c-bf99fe85420d}"/>
-    <object class="SFXReverbEffect" id="{186e044d-5a23-4339-826c-1cbe6e50be78}">
-        <property name="decayTime">
-            <value>4800</value>
-        </property>
-        <property name="earlyDelay">
-            <value>15.5</value>
-        </property>
-        <property name="highCut">
-            <value>2800</value>
-        </property>
-        <property name="wetLevel">
-            <value>0</value>
-        </property>
-        <property name="dryLevel">
-            <value>-0.5</value>
-        </property>
-    </object>
     <object class="SingleSound" id="{8e4cf638-5d6c-41e1-b39b-5d8e476fb457}">
         <relationship name="audioFile">
             <destination>{fbba55b0-06c0-46fe-83c1-b6f43b88c79c}</destination>

@@ -5,7 +5,7 @@
             <value>WhisperScatter3</value>
         </property>
         <property name="outputFormat">
-            <value>2</value>
+            <value>5</value>
         </property>
         <relationship name="folder">
             <destination>{afece51b-25a4-4861-8e59-0018d9a60bb5}</destination>
@@ -108,7 +108,7 @@
             <value>850</value>
         </property>
         <property name="maximumScatterDistance">
-            <value>25</value>
+            <value>7.80000019</value>
         </property>
         <relationship name="modulators">
             <destination>{015a2eef-003d-41a0-805b-ba6f6b4cb7cd}</destination>
@@ -119,6 +119,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{3368b7ab-c786-4ad6-92ca-038fa7b22dd0}">
+        <property name="volume">
+            <value>10</value>
+        </property>
         <property name="name">
             <value>Audio 1</value>
         </property>
@@ -148,13 +151,14 @@
     </object>
     <object class="MixerBusEffectChain" id="{1504e017-a78b-4667-af45-fbf0405e041b}">
         <relationship name="effects">
-            <destination>{4b61129a-dc25-4872-b890-c998eb44ddcd}</destination>
             <destination>{44dcf810-d52e-42f1-8b2f-a682e38826b3}</destination>
-            <destination>{4d96fd69-509c-42a4-a842-240613acd55a}</destination>
-            <destination>{29390401-0966-4e24-8ab0-aeb79c1e1c4c}</destination>
         </relationship>
     </object>
-    <object class="MixerBusPanner" id="{fa3d5ece-88ba-45dc-acf1-f3bf1916065e}"/>
+    <object class="MixerBusPanner" id="{fa3d5ece-88ba-45dc-acf1-f3bf1916065e}">
+        <property name="surroundLFELevel">
+            <value>-2</value>
+        </property>
+    </object>
     <object class="MixerBusFader" id="{3b2909d2-b686-454d-8699-54af12cfa578}"/>
     <object class="RandomizerModulator" id="{015a2eef-003d-41a0-805b-ba6f6b4cb7cd}">
         <property name="nameOfPropertyBeingModulated">
@@ -193,40 +197,12 @@
     </object>
     <object class="MixerBusEffectChain" id="{79e294a4-3986-4902-9e54-d9dc60e27e55}">
         <relationship name="effects">
+            <destination>{e778664a-e473-48fd-a417-8539f1409e6a}</destination>
             <destination>{9cbc4568-ee33-47d1-8387-46774b98962f}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{ff84a3d6-52a4-4622-bd9c-8f943f3c7fe2}"/>
-    <object class="CompressorEffect" id="{4b61129a-dc25-4872-b890-c998eb44ddcd}">
-        <property name="threshold">
-            <value>-9.5</value>
-        </property>
-        <property name="ratio">
-            <value>4.29999971</value>
-        </property>
-        <property name="gain">
-            <value>24</value>
-        </property>
-    </object>
     <object class="MixerBusFader" id="{44dcf810-d52e-42f1-8b2f-a682e38826b3}"/>
-    <object class="SpatialiserEffect" id="{4d96fd69-509c-42a4-a842-240613acd55a}"/>
-    <object class="SFXReverbEffect" id="{29390401-0966-4e24-8ab0-aeb79c1e1c4c}">
-        <property name="decayTime">
-            <value>4800</value>
-        </property>
-        <property name="earlyDelay">
-            <value>15.5</value>
-        </property>
-        <property name="highCut">
-            <value>2800</value>
-        </property>
-        <property name="wetLevel">
-            <value>0</value>
-        </property>
-        <property name="dryLevel">
-            <value>-0.5</value>
-        </property>
-    </object>
     <object class="SingleSound" id="{1188a604-2190-43c8-a301-635ccc3db96d}">
         <relationship name="audioFile">
             <destination>{ba1fdcda-4371-4294-b90a-edeb04f9b271}</destination>
@@ -301,6 +277,11 @@
         <relationship name="audioFile">
             <destination>{feb00933-26e8-4620-ad35-95b2b3bd614d}</destination>
         </relationship>
+    </object>
+    <object class="GainEffect" id="{e778664a-e473-48fd-a417-8539f1409e6a}">
+        <property name="gain">
+            <value>10</value>
+        </property>
     </object>
     <object class="MixerBusFader" id="{9cbc4568-ee33-47d1-8387-46774b98962f}"/>
 </objects>

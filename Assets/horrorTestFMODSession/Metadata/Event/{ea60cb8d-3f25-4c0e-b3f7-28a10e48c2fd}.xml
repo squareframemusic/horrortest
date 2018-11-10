@@ -5,7 +5,7 @@
             <value>WhisperScatter1</value>
         </property>
         <property name="outputFormat">
-            <value>2</value>
+            <value>5</value>
         </property>
         <relationship name="folder">
             <destination>{afece51b-25a4-4861-8e59-0018d9a60bb5}</destination>
@@ -75,6 +75,9 @@
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{5a067da0-e416-433a-9e48-8b766049192f}">
+        <property name="volume">
+            <value>10</value>
+        </property>
         <relationship name="effectChain">
             <destination>{c62581e2-c05e-4661-bd0f-efaf687a3d64}</destination>
         </relationship>
@@ -96,19 +99,22 @@
             <value>22</value>
         </property>
         <property name="pitch">
-            <value>1.60000002</value>
+            <value>6</value>
         </property>
         <property name="polyphony">
             <value>3</value>
         </property>
         <property name="minimumTimeBetweenSounds">
-            <value>1500</value>
+            <value>3000</value>
         </property>
         <property name="maximumTimeBetweenSounds">
-            <value>4500</value>
+            <value>6500</value>
         </property>
         <property name="maximumScatterDistance">
-            <value>45</value>
+            <value>4.4000001</value>
+        </property>
+        <property name="pitchRandomization">
+            <value>2.99999976</value>
         </property>
         <relationship name="modulators">
             <destination>{6f0b88a0-00f5-4b35-b6a6-de0b8c4d727c}</destination>
@@ -148,10 +154,8 @@
     </object>
     <object class="MixerBusEffectChain" id="{c62581e2-c05e-4661-bd0f-efaf687a3d64}">
         <relationship name="effects">
-            <destination>{8d687352-1403-4064-80dd-cf079e13e706}</destination>
+            <destination>{38a8ece6-c137-402c-8486-9625bca56a38}</destination>
             <destination>{d1a29281-e7e3-4195-a813-b790777ddcd0}</destination>
-            <destination>{6733717b-a5e9-4f68-be85-fb9d4c03fb8d}</destination>
-            <destination>{45115a66-de34-4458-99ef-34c531844962}</destination>
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{2c54a0b4-412b-468e-ad0b-c43408144d85}"/>
@@ -169,7 +173,7 @@
             <value>volume</value>
         </property>
         <property name="amount">
-            <value>4.4000001</value>
+            <value>6.39999962</value>
         </property>
     </object>
     <object class="MultiSound" id="{3de73f46-21cf-4464-8994-d8911ba2b509}">
@@ -203,46 +207,12 @@
         </relationship>
     </object>
     <object class="MixerBusPanner" id="{ad4ccbd2-3f1b-4c34-982c-6b9f39786fbe}"/>
-    <object class="CompressorEffect" id="{8d687352-1403-4064-80dd-cf079e13e706}">
-        <property name="threshold">
-            <value>-9.5</value>
-        </property>
-        <property name="ratio">
-            <value>4.29999971</value>
-        </property>
+    <object class="GainEffect" id="{38a8ece6-c137-402c-8486-9625bca56a38}">
         <property name="gain">
-            <value>24</value>
+            <value>6.5</value>
         </property>
     </object>
     <object class="MixerBusFader" id="{d1a29281-e7e3-4195-a813-b790777ddcd0}"/>
-    <object class="SpatialiserEffect" id="{6733717b-a5e9-4f68-be85-fb9d4c03fb8d}">
-        <property name="extentMode">
-            <value>1</value>
-        </property>
-        <property name="soundSize">
-            <value>0.099999994</value>
-        </property>
-    </object>
-    <object class="SFXReverbEffect" id="{45115a66-de34-4458-99ef-34c531844962}">
-        <property name="decayTime">
-            <value>4800</value>
-        </property>
-        <property name="earlyDelay">
-            <value>15.5</value>
-        </property>
-        <property name="lowShelfFrequency">
-            <value>450</value>
-        </property>
-        <property name="highCut">
-            <value>2800</value>
-        </property>
-        <property name="wetLevel">
-            <value>0</value>
-        </property>
-        <property name="dryLevel">
-            <value>-0.5</value>
-        </property>
-    </object>
     <object class="SingleSound" id="{7cc4c409-2ac8-479b-ab31-5095e7c9fddb}">
         <relationship name="audioFile">
             <destination>{fbba55b0-06c0-46fe-83c1-b6f43b88c79c}</destination>
