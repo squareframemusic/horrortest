@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlickerDoll : MonoBehaviour {
+public class Flicker : MonoBehaviour {
 
-    public GameObject doll;
+    public GameObject obj;
     public float timer;
 
 	// Use this for initialization
@@ -14,14 +14,14 @@ public class FlickerDoll : MonoBehaviour {
 	
 	IEnumerator FlickeringDoll()
     {
-        doll.SetActive(false);
-        timer = Random.Range(0.1f, 1);
+        obj.SetActive(false);
+        timer = Random.Range(0.1f, 0.5f);
         yield return new WaitForSeconds(timer);
-        doll.SetActive(true);
-        timer = Random.Range(0.1f, 1);
+        obj.SetActive(true);
+        timer = Random.Range(0.1f,0.5f);
         yield return new WaitForSeconds(timer);
-        doll.SetActive(false);
-        timer = Random.Range(0.1f, 1);
+        obj.SetActive(false);
+        timer = Random.Range(0.1f, 0.5f);
         yield return new WaitForSeconds(timer);
         StartCoroutine(FlickeringDoll());
     }
