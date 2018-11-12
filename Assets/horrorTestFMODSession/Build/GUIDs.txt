@@ -1,17 +1,24 @@
 {d741849b-d0d1-4967-9506-9ea554b43a42} event:/MC/Drone
-{79a01e11-bae8-4206-8ed8-8d9b840fe3d4} event:/MC/Tension
 {5abff2a5-436c-40fb-af53-19eedeb30f45} event:/MC/Jump_Scares
+{79a01e11-bae8-4206-8ed8-8d9b840fe3d4} event:/MC/Tension
+{af5d1ee6-72aa-4c33-9233-da78635401f7} event:/SFX/CupCollide
 {d661323c-cb1f-4c60-a920-b59f8886e482} event:/SFX/ElectricalBox
 {77edc869-8206-4f81-935e-554518f409dc} event:/SFX/Footsteps
 {89e0fa40-37fe-47a6-88f0-df6a9c805144} event:/SFX/Glitch01
 {69a5cf2a-d221-4c5e-a5e2-677d7e0ad27b} event:/SFX/Glitch02
 {dbc5d283-0a45-45cf-ac1b-45bb19887206} event:/SFX/Glitch03
+{e197c92f-f50c-4306-9cc5-8d34cbdad6ac} event:/SFX/Glitch04_Short (2)
+{6cabad97-c035-450d-aabf-07b119ad032d} event:/SFX/Glitch04_Short
+{d288857b-6660-4616-88bc-472d3ab1161a} event:/SFX/HospitalBedCollide
+{1501e423-e3b1-49f2-905c-623a2e05c1e5} event:/SFX/Laughter
 {a95006e0-a1a3-4ff8-9b72-a56f7edca026} event:/SFX/LightsBuzz
 {e74f516e-62a9-485e-9bad-1ff92d1ebb07} event:/SFX/Monster
 {f89562c0-426a-4bec-b72c-a8a8195080f7} event:/SFX/Scream1
+{d04ed9ed-7b48-4267-b3dd-580ce6ed962c} event:/SFX/TrolleyCollide
 {ea60cb8d-3f25-4c0e-b3f7-28a10e48c2fd} event:/SFX/WhisperScatter1
 {5fe9eb74-cc47-4df4-aab4-17d273ca38a0} event:/SFX/WhisperScatter2
 {f69c0e5e-1d69-4c8c-9790-cd6f1d3748c1} event:/SFX/WhisperScatter3
+{2dfb2bc0-4696-4fc6-94ef-620f9ba728dc} event:/SFX/WhisperScatterStart
 {75524403-0542-407c-8a73-f241913709cd} bus:/
 {93df2d9a-9a15-4632-b7fd-c1e8e0c10672} bus:/Reverb
 {0a2b4f64-1a77-470e-8819-589c5e0fa656} bank:/MC Bank

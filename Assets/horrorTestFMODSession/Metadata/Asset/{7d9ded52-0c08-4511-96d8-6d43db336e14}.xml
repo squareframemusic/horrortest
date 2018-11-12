@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="EncodableAsset" id="{7d9ded52-0c08-4511-96d8-6d43db336e14}">
+        <property name="assetPath">
+            <value>Trolley_SFX/</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{1355540e-1d48-4601-a38e-7d61cb5e8a02}</destination>
+        </relationship>
+    </object>
+</objects>
