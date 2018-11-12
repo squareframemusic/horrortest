@@ -161,7 +161,7 @@
     </object>
     <object class="EventMixerGroup" id="{c11aae53-b21e-482f-8126-6ab83c3767ec}">
         <property name="volume">
-            <value>4.5</value>
+            <value>1</value>
         </property>
         <property name="name">
             <value>Hard Collision</value>
@@ -201,6 +201,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{ac1c5793-d929-4491-9df1-baa4044c42d4}">
+        <property name="volume">
+            <value>-2.5</value>
+        </property>
         <property name="name">
             <value>Medium Collision</value>
         </property>

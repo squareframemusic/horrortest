@@ -235,7 +235,7 @@
     </object>
     <object class="EventMixerGroup" id="{e9f74072-df94-42fc-a9f3-8cfe9cbbdc54}">
         <property name="volume">
-            <value>-54</value>
+            <value>-80</value>
         </property>
         <property name="name">
             <value>Soft Collision</value>
@@ -715,7 +715,7 @@
             <value>0</value>
         </property>
         <property name="value">
-            <value>-80</value>
+            <value>0</value>
         </property>
         <property name="curveShape">
             <value>-0.742494106</value>
