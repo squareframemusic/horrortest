@@ -20,6 +20,7 @@ public class CollisionAudio : MonoBehaviour {
         {
             if (objectType == objectList.trolley)
             {
+                Debug.Log("trolley collision called");
                 AudioManager.instance.TrollyCollision(collision.relativeVelocity.magnitude, this.transform.position);
             }
             if (objectType == objectList.cup)

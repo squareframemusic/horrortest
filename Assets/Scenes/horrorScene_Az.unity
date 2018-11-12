@@ -1956,7 +1956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29d251a2fb9dae0488454be48bff9814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  printCollisionMagnitude: 0
+  printCollisionMagnitude: 1
 --- !u!54 &365865027
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4448,6 +4448,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.33, y: 2.63, z: 0.08}
   m_Center: {x: 0.000045776367, y: 0.00000005960467, z: 3.12}
+--- !u!114 &1053656537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1053656528}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: event:/SFX/TrolleyCollide
+  PlayEvent: 7
+  StopEvent: 0
+  CollisionTag: 
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 10
 --- !u!1 &1053982050
 GameObject:
   m_ObjectHideFlags: 0
@@ -7864,6 +7886,48 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 428016, guid: 2fa97d29375bda64080d41087c0c107c,
     type: 2}
   m_PrefabInternal: {fileID: 1520012842}
+--- !u!1 &1839216229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1839216231}
+  - component: {fileID: 1839216230}
+  m_Layer: 0
+  m_Name: FMOD.UnityIntegration.RuntimeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1839216230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1839216229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e5fb8ce07f0ce84b9d1852869527ea5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fmodPlatform: 0
+  cachedPointers: 00000000000000000000000000000000
+--- !u!4 &1839216231
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1839216229}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1855611119
 Prefab:
   m_ObjectHideFlags: 0

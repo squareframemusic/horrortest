@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{891cbe37-b089-4291-ba95-11ac76d25c21}">
+        <property name="assetPath">
+            <value>Horror_SFX_Trolley_01.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>48</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>1.3146666666666667</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{1355540e-1d48-4601-a38e-7d61cb5e8a02}</destination>
+        </relationship>
+    </object>
+</objects>
