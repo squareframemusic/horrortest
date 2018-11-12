@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{87c53ed7-b3c0-4c12-ac92-4f721686ec05}">
+        <property name="name">
+            <value>collisionVelocity</value>
+        </property>
+        <relationship name="folder">
+            <destination>{1cbeec76-dfbc-4100-befc-cea53fa9a5e1}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{c3f0d710-ad24-49d9-9fe5-4b0e6bd9b543}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{c3f0d710-ad24-49d9-9fe5-4b0e6bd9b543}">
+        <property name="maximum">
+            <value>100</value>
+        </property>
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>
