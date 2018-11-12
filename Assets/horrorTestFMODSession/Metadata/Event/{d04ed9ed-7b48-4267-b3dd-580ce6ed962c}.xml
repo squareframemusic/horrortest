@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="Event" id="{d04ed9ed-7b48-4267-b3dd-580ce6ed962c}">
         <property name="name">
-            <value>HospitalEquipment 01</value>
+            <value>TrolleyCollide</value>
         </property>
         <property name="note">
             <value>Automation and velocity values are a guess at this stage
