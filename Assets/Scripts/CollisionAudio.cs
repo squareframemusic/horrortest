@@ -14,9 +14,11 @@ public class CollisionAudio : MonoBehaviour {
     public objectList objectType;
 
     public void OnCollisionEnter(Collision collision)
+
+        
     {
         //if statement sets a gate to prevent smaller collisions from occurring.
-        if (collision.relativeVelocity.magnitude > 0.50f)
+        if (collision.relativeVelocity.magnitude > 0.01f)
         {
             if (objectType == objectList.trolley)
             {
