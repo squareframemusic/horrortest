@@ -34,6 +34,8 @@ public class BedRoll : MonoBehaviour {
     FMOD.Studio.ParameterInstance wheelIndexFour;
     FMOD.Studio.ParameterInstance vel4;
 
+    public bool audioStartStop = false;
+
     // Use this for initialization
     void Start () {
         //Populates fmod event and parameter variables. Sets wheel index number.
@@ -63,42 +65,52 @@ public class BedRoll : MonoBehaviour {
 
         //calculates and updates the velocity that the bed is travelling in any direction.
         bedVelocity = bedRigidBody.velocity.magnitude;
+        UpdateVelocities(bedVelocity);
 
-        if (bedVelocity > 0.05)
+        if (bedVelocity > 0.005)
         {
             //start fmod wheel events.
             StartBedEvents();
 
             //update velocity fmod parameters.
-            UpdateVelocities(bedVelocity);
+            //UpdateVelocities(bedVelocity);
 
             //updates the 3D positioning of the wheels.
             UpdateWheelLocations();
 
         }
-        else if (bedVelocity < 0.05)
+        else if (bedVelocity < 0.005)
         {
             //stops fmod wheel events.
             StopBedEvents();
+            //UpdateVelocities(bedVelocity);
         }
 	}
 
     //starts all bed rolling fmod event instances.
     void StartBedEvents ()
     {
-        wheelOneEvent.start();
-        wheelTwoEvent.start();
-        wheelThreeEvent.start();
-        wheelFourEvent.start();
+        if (audioStartStop == false)
+        {
+            audioStartStop = true;
+            wheelOneEvent.start();
+            wheelTwoEvent.start();
+            wheelThreeEvent.start();
+            wheelFourEvent.start();
+        }
     }
 
     //stops all bed rolling fmod event instances.
     void StopBedEvents()
     {
-        wheelOneEvent.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        wheelTwoEvent.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        wheelThreeEvent.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
-        wheelFourEvent.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        if (audioStartStop == true)
+        {
+            audioStartStop = false;
+            wheelOneEvent.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            wheelTwoEvent.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            wheelThreeEvent.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            wheelFourEvent.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
     }
     
     //sets all RollSpeed parameters in the fmod events to the rigidbody velocity.magnitude.

@@ -248,6 +248,7 @@ MonoBehaviour:
   wheelFourLocation: {fileID: 1210235121213990}
   bedRigidBody: {fileID: 54353382126530048}
   bedVelocity: 0
+  audioStartStop: 0
 --- !u!114 &114282505517445218
 MonoBehaviour:
   m_ObjectHideFlags: 1

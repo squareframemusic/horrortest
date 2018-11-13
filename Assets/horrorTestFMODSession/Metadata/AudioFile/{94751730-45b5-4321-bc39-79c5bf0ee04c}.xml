@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{94751730-45b5-4321-bc39-79c5bf0ee04c}">
         <property name="assetPath">
-            <value>clinkCup10.wav</value>
+            <value>Cups/clinkCup10.wav</value>
         </property>
         <property name="frequencyInKHz">
             <value>96</value>
